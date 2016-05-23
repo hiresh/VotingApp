@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Vote</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <style>
+            #drop{
+                width:300px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="title">
+            <center><h1>Vote your preference</h1></center>
+        </div>
+            <br>
+            <hr>
+            <form method="POST" action="voteController">
+               <center> <div class="form-group" id="drop">
+                    <select class="form-control" id="sel1" name="userVote">
+                        <option>Strawberry</option>
+                        <option>Raspberry</option>
+                        <option>Blueberry</option>
+                        <option>lemon</option>
+                     </select>
+                   </div></center>
+                <br><br><br><br><br>
+                <center><input type="submit" class="btn btn-success" value="cast your vote"></center>
+            </form>
+        </div>
+    </body>
+</html>
